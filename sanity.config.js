@@ -9,11 +9,6 @@ export default defineConfig({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "i58n53qq",
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   basePath: "/studio",
-  plugins: [
-    structureTool(),
-    visionTool()
-  ],
-  schema: {
-    types: schemaTypes
-  }
+  plugins: [structureTool(), visionTool()],
+  schema: { types: schemaTypes }
 });
